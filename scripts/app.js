@@ -13,8 +13,7 @@ button.addEventListener('click', function () {
             // div.innerText = JSON.stringify(json, null, 0);
             // É um método da classe JSON - STRINGFY
 
-            let post = new Post(json.userId, json.id, json.title, json.body);
+            let post = Post.fromRaw(json);
             console.log(post);
-            
         })
 });
