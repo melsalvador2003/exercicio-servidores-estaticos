@@ -8,8 +8,13 @@ button.addEventListener('click', function () {
             return response.json();
         })
         .then(function (json) {
-            div.innerText = json.body;
+            // div.innerText = json.body;
+
             // div.innerText = JSON.stringify(json, null, 0);
             // É um método da classe JSON - STRINGFY
+
+            let post = new Post(json.userId, json.id, json.title, json.body);
+            console.log(post);
+            
         })
 });
