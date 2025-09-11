@@ -3,13 +3,13 @@ let div = document.getElementById('out');
 
 button.addEventListener('click', function () {
     // ASSINCRONA
-    fetch('https://jsonplaceholder.typicode.com/posts/88')
+    fetch('https://jsonplaceholder.typicode.com/posts/101')
         .then(function (response) {
             if (response.ok) {
                 return response.json();
             } else {
                 let errorMensage = "Erro: Recurso não encontrado"
-                throw new Error("errorMensage")
+                throw new Error(errorMensage);
             }
         })
         .then(function (json) {
