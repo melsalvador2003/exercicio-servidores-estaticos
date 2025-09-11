@@ -14,6 +14,6 @@ button.addEventListener('click', function () {
             // É um método da classe JSON - STRINGFY
 
             let post = Post.fromRaw(json);
-            console.log(post);
+            div = post.renderFrom(div);
         })
 });
