@@ -10,5 +10,6 @@ button.addEventListener('click', function () {
         .then(function (json) {
             div.innerText = json.body;
             // div.innerText = JSON.stringify(json, null, 0);
+            // É um método da classe JSON - STRINGFY
         })
 });

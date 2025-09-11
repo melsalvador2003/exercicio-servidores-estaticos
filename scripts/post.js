@@ -1,7 +1,7 @@
 // Data Model (Modelo de dados)
 class Post {
     // Constructor serve para chamar a classe
-    constructor() {
+    constructor(userId, id, title, body) {
         this.userId;
         this.id;
         this.title;
